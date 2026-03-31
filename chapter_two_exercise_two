@@ -1,0 +1,17 @@
+#include <iostream>
+
+// The scope of the exercise is to write a program which converts miles to kilometers.
+// Conversion formula: Multiply distance value in miles by 1.60934
+int main() {
+    std::cout << "This program will help you convert from miles to kilometers." << std::endl
+              << "Please enter the value you want to convert below" << std::endl;
+
+    double miles{};
+    double convert_value{1.60934};
+    std::cin >> miles;
+
+    double kilometers{ miles * convert_value };
+    std::cout << "Conversion complete! The distance in kilometers is: " << kilometers << std::endl;
+
+    return 0;
+}
