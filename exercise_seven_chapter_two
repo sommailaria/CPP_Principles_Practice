@@ -1,0 +1,34 @@
+/* Do exercise 6, but with three string values. So, if the user enters the
+values Steinbeck, Hemingway, Fitzgerald, the output should be Fitzgerald,
+Hemingway, Steinbeck. */
+
+
+#include <iostream>
+
+int main() {
+    std::cout << "Please enter three words: " << std::endl;
+    std::string one{};
+    std::string two{};
+    std::string three{};
+
+    std::cin >> one >> two >> three;
+
+    if (one > two) {
+         std::string temp = one;
+        one = two;
+        two = temp;
+    }
+    if (two > three) {
+        std::string temp = two;
+        two = three;
+        three = temp;
+    }
+    if (one > two) {
+        std::string temp = one;
+        one = two;
+        two = temp;
+    }
+
+    std::cout << one << ", " << two << ", " << three << std::endl;
+    return 0;
+}
