@@ -1,0 +1,24 @@
+/* Write a program to test an integer value to determine if it is odd or even.
+ As always, make sure your output is clear and complete. In other words,
+ don’t just output yes or no. Your output should stand alone, like The
+ value 4 is an even number.*/
+
+#include <iostream>
+
+int main() {
+    std::cout << "This program will help you determine if a number is odd or even. " << std::endl;
+    std::cout << "Please enter a number below: " << std::endl;
+    
+    int number{};
+    std::cin >> number;
+    
+    if(number % 2 == 0) {
+        std::cout << "The value " << number << " is an even number." << std::endl;
+    }
+    
+    else
+    {
+        std::cout << "The value " << number << " is an odd number." << std::endl;
+    }
+    return 0;
+}
