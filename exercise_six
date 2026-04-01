@@ -1,0 +1,42 @@
+/* Write a program that prompts the user to enter three integer values, and
+then outputs the values in numerical sequence separated by commas. So,
+if the user enters the values 10 4 6, the output should be 4, 6, 10. If two
+values are the same, they should just be ordered together. So, the input 4
+5 4 should give 4, 4, 5.
+
+
+
+I am aware that there are far more combinations than what I shared above, and that
+there is a better way to write this program; with that said, I wanted to try and
+solve this with the tools that were shown in the chapter
+*/
+
+
+#include <iostream>
+int main() {
+    int one{}, two{}, three{};
+
+    std::cout << "Please enter three integer values: " << std::endl;
+    std::cin >> one >> two >> three;
+
+    
+    if (one > two) {
+        int temp = one;
+        one = two;
+        two = temp;
+    }
+    if (two > three) {
+        int temp = two;
+        two = three;
+        three = temp;
+    }
+    if (one > two) {
+        int temp = one;
+        one = two;
+        two = temp;
+    }
+
+    std::cout << one << ", " << two << ", " << three << std::endl;
+
+    return 0;
+}
