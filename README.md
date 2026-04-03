@@ -1,4 +1,4 @@
-# PPP_Third_Edition
+# CPP_Principles_Practice
 Hello! 
 
 This repository will contain my solutions for the drills and exercises contained in the book "Programming: Principles and Practice using C++" (Third edition). 
